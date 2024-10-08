@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main {
+            display: grid;
+            gap: 10px;
+            background-color: #d8d3d3;
+            margin: auto;
+            max-width: 600px;
+        }
+        #container1 {
+            display: grid;
+            grid-template-areas: 
+            'section1 section1 article1'
+            'section1 section1 article1'
+            'section1 section1 aside1'
+            'section1 section1 aside1';
+            gap: 10px;
+            text-align: center;
+            font-weight: bolder;
+        }
+
+        #container2 {
+            display: grid;
+            grid-template-areas: 
+            'article2 section2 section2'
+            'article2 section2 section2'
+            'aside2 section2 section2'
+            'aside2 section2 section2';
+            gap: 10px;
+            text-align: center;
+            font-weight: bolder;
+        }
+
+        #container3 {
+            display: grid;
+            grid-template-areas: 
+            ' section3 section3 article3'
+            ' section3 section3 article3'
+            ' section3 section3 aside3'
+            ' section3 section3 aside3';
+            gap: 10px;
+            text-align: center;
+            font-weight: bolder;
+        }
+        
+
+        .section1 {
+            grid-area: section1;
+            background-color: #54e013;
+            height: 200px;
+            border: solid;
+            display: grid;
+            place-items: center;
+        }
+        .article1 {
+            grid-area: article1;
+            background-color: #54e013;
+            border: solid;
+            display: grid;
+            place-items: center;
+        }
+        .aside1 {
+            grid-area: aside1;
+            background-color: #54e013;
+            border: solid;
+            display: grid;
+            place-items: center;
+        }
+
+        /* --------------------------------- */
+
+        .section2 {
+            grid-area: section2;
+            background-color: #e01313;
+            height: 200px;
+            border: solid;
+            display: grid;
+            place-items: center;
+        }
+        .article2 {
+            grid-area: article2;
+            background-color: #e01313;
+            border: solid;
+            display: grid;
+            place-items: center;
+        }
+        .aside2 {
+            grid-area: aside2;
+            background-color: #e01313;
+            border: solid;
+            display: grid;
+            place-items: center;
+        }
+
+        /* =============================3 */
+
+        .section3 {
+            grid-area: section3;
+            background-color: #13d2e0;
+            height: 200px;
+            border: solid;
+            display: grid;
+            place-items: center;
+        }
+        .article3 {
+            grid-area: article3;
+            background-color: #13d2e0;
+            border: solid;
+            display: grid;
+            place-items: center;
+        }
+        .aside3 {
+            grid-area: aside3;
+            background-color: #13d2e0;
+            border: solid;
+            display: grid;
+            place-items: center;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="container1">
+            <section class="section1">Section</section>
+            <article class="article1">Article</article>
+            <aside class="aside1">Aside</aside>
+        </div>
+
+        
+        <div id="container2">
+            <article class="article2">Article</article>
+            <aside class="aside2">Aside</aside>
+            <section class="section2">Section</section>
+        </div>
+
+
+        <div id="container3">
+            <section class="section3">Section</section>
+            <article class="article3">Article</article>
+            <aside class="aside3">Aside</aside>
+        </div>
+    </main>
+</body>
+</html>
